@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D3CA8B9B27DBDAAA0051DE95 /* SmartFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8B9A27DBDAAA0051DE95 /* SmartFoodApp.swift */; };
-		D3CA8B9D27DBDAAA0051DE95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8B9C27DBDAAA0051DE95 /* ContentView.swift */; };
+		D3CA8B9D27DBDAAA0051DE95 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8B9C27DBDAAA0051DE95 /* RecipesView.swift */; };
 		D3CA8B9F27DBDAAA0051DE95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CA8B9E27DBDAAA0051DE95 /* Assets.xcassets */; };
 		D3CA8BA227DBDAAA0051DE95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CA8BA127DBDAAA0051DE95 /* Preview Assets.xcassets */; };
 		D3CA8BAC27DBDAAB0051DE95 /* SmartFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BAB27DBDAAB0051DE95 /* SmartFoodTests.swift */; };
 		D3CA8BB627DBDAAB0051DE95 /* SmartFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BB527DBDAAB0051DE95 /* SmartFoodUITests.swift */; };
 		D3CA8BB827DBDAAB0051DE95 /* SmartFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BB727DBDAAB0051DE95 /* SmartFoodUITestsLaunchTests.swift */; };
+		D3CA8BC827DBE06A0051DE95 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BC727DBE06A0051DE95 /* Category.swift */; };
+		D3CA8BCA27DBE0780051DE95 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BC927DBE0780051DE95 /* Recipe.swift */; };
+		D3CA8BCC27DBE1BC0051DE95 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BCB27DBE1BC0051DE95 /* RecipeView.swift */; };
+		D3CA8BCE27DBE2E50051DE95 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BCD27DBE2E50051DE95 /* MockedData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		D3CA8B9727DBDAAA0051DE95 /* SmartFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CA8B9A27DBDAAA0051DE95 /* SmartFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFoodApp.swift; sourceTree = "<group>"; };
-		D3CA8B9C27DBDAAA0051DE95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3CA8B9C27DBDAAA0051DE95 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		D3CA8B9E27DBDAAA0051DE95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3CA8BA127DBDAAA0051DE95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3CA8BA727DBDAAB0051DE95 /* SmartFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +49,10 @@
 		D3CA8BB527DBDAAB0051DE95 /* SmartFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFoodUITests.swift; sourceTree = "<group>"; };
 		D3CA8BB727DBDAAB0051DE95 /* SmartFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3CA8BC427DBDE470051DE95 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D3CA8BC727DBE06A0051DE95 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D3CA8BC927DBE0780051DE95 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		D3CA8BCB27DBE1BC0051DE95 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		D3CA8BCD27DBE2E50051DE95 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +104,9 @@
 		D3CA8B9927DBDAAA0051DE95 /* SmartFood */ = {
 			isa = PBXGroup;
 			children = (
+				D3CA8BC627DBE0160051DE95 /* Models */,
+				D3CA8BC527DBE00B0051DE95 /* Views */,
 				D3CA8B9A27DBDAAA0051DE95 /* SmartFoodApp.swift */,
-				D3CA8B9C27DBDAAA0051DE95 /* ContentView.swift */,
 				D3CA8B9E27DBDAAA0051DE95 /* Assets.xcassets */,
 				D3CA8BA027DBDAAA0051DE95 /* Preview Content */,
 			);
@@ -108,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				D3CA8BA127DBDAAA0051DE95 /* Preview Assets.xcassets */,
+				D3CA8BCD27DBE2E50051DE95 /* MockedData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -127,6 +137,24 @@
 				D3CA8BB727DBDAAB0051DE95 /* SmartFoodUITestsLaunchTests.swift */,
 			);
 			path = SmartFoodUITests;
+			sourceTree = "<group>";
+		};
+		D3CA8BC527DBE00B0051DE95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA8B9C27DBDAAA0051DE95 /* RecipesView.swift */,
+				D3CA8BCB27DBE1BC0051DE95 /* RecipeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3CA8BC627DBE0160051DE95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA8BC727DBE06A0051DE95 /* Category.swift */,
+				D3CA8BC927DBE0780051DE95 /* Recipe.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3CA8B9D27DBDAAA0051DE95 /* ContentView.swift in Sources */,
+				D3CA8B9D27DBDAAA0051DE95 /* RecipesView.swift in Sources */,
 				D3CA8B9B27DBDAAA0051DE95 /* SmartFoodApp.swift in Sources */,
+				D3CA8BCE27DBE2E50051DE95 /* MockedData.swift in Sources */,
+				D3CA8BC827DBE06A0051DE95 /* Category.swift in Sources */,
+				D3CA8BCA27DBE0780051DE95 /* Recipe.swift in Sources */,
+				D3CA8BCC27DBE1BC0051DE95 /* RecipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
