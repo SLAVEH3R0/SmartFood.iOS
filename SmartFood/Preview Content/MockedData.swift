@@ -24,8 +24,8 @@ extension Recipe {
            3 - Eat
         """,
         category: .preview,
-        photo: "https://picsum.photos/id/102/400/300",
-        createdAt: Date(),
-        updatedAt: Date()
+        photo: "https://picsum.photos/id/102/400/300"
+        //createdAt: Date(),
+        //updatedAt: Date()
     )
 }

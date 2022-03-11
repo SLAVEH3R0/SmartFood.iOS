@@ -31,9 +31,7 @@ struct RecipeView: View {
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 .padding(.vertical, 2)
-                
-                Spacer()
-                
+                                
                 Text(recipe.category.name)
                     .font(.system(size: 14))
                     .padding(.horizontal, 10)

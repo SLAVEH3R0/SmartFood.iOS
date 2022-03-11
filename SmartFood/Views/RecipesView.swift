@@ -8,18 +8,33 @@
 import SwiftUI
 
 struct RecipesView: View {
-    
-    @State private var recipes = [Recipe](repeating: .preview, count: 10)
+    @StateObject var viewModel = RecipesViewModel()
     
     var body: some View {
         
         NavigationView {
             List {
-                ForEach(recipes) { recipe in
+                ForEach(viewModel.recipes) { recipe in
                     RecipeView(recipe: recipe)
                 }
+                .navigationTitle("Recipes")
             }
-            .navigationTitle("Recipes")
+            .task {
+                await fetchData()
+            }
+            .refreshable {
+                await fetchData()
+            }
+        }
+    }
+}
+
+extension RecipesView {
+    func fetchData() async {
+        do {
+            try await viewModel.fetchRecipes()
+        } catch {
+            print("ERROR: \(error)")
         }
     }
 }
@@ -27,9 +42,9 @@ struct RecipesView: View {
 struct RecipesView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            RecipesView()
+            RecipesView(viewModel: RecipesViewModel.fullState())
             
-            RecipesView()
+            RecipesView(viewModel: RecipesViewModel.fullState())
                 .preferredColorScheme(.dark)
         }
     }

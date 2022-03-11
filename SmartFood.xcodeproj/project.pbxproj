@@ -18,6 +18,8 @@
 		D3CA8BCA27DBE0780051DE95 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BC927DBE0780051DE95 /* Recipe.swift */; };
 		D3CA8BCC27DBE1BC0051DE95 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BCB27DBE1BC0051DE95 /* RecipeView.swift */; };
 		D3CA8BCE27DBE2E50051DE95 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BCD27DBE2E50051DE95 /* MockedData.swift */; };
+		D3CA8BD127DBF04E0051DE95 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BD027DBF04E0051DE95 /* RecipesViewModel.swift */; };
+		D3CA8BD327DBF8CD0051DE95 /* MockedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA8BD227DBF8CD0051DE95 /* MockedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		D3CA8BC927DBE0780051DE95 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		D3CA8BCB27DBE1BC0051DE95 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		D3CA8BCD27DBE2E50051DE95 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
+		D3CA8BD027DBF04E0051DE95 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		D3CA8BD227DBF8CD0051DE95 /* MockedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		D3CA8B9927DBDAAA0051DE95 /* SmartFood */ = {
 			isa = PBXGroup;
 			children = (
+				D3CA8BCF27DBF01A0051DE95 /* ViewModels */,
 				D3CA8BC627DBE0160051DE95 /* Models */,
 				D3CA8BC527DBE00B0051DE95 /* Views */,
 				D3CA8B9A27DBDAAA0051DE95 /* SmartFoodApp.swift */,
@@ -118,6 +123,7 @@
 			children = (
 				D3CA8BA127DBDAAA0051DE95 /* Preview Assets.xcassets */,
 				D3CA8BCD27DBE2E50051DE95 /* MockedData.swift */,
+				D3CA8BD227DBF8CD0051DE95 /* MockedViewModel.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -155,6 +161,14 @@
 				D3CA8BC927DBE0780051DE95 /* Recipe.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D3CA8BCF27DBF01A0051DE95 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA8BD027DBF04E0051DE95 /* RecipesViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +306,9 @@
 				D3CA8BCE27DBE2E50051DE95 /* MockedData.swift in Sources */,
 				D3CA8BC827DBE06A0051DE95 /* Category.swift in Sources */,
 				D3CA8BCA27DBE0780051DE95 /* Recipe.swift in Sources */,
+				D3CA8BD127DBF04E0051DE95 /* RecipesViewModel.swift in Sources */,
 				D3CA8BCC27DBE1BC0051DE95 /* RecipeView.swift in Sources */,
+				D3CA8BD327DBF8CD0051DE95 /* MockedViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
